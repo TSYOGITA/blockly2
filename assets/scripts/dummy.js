@@ -7,19 +7,6 @@ $(document).ready(function () {
     });
   });
   
-  
-  /*Blockly.Blocks['string_length'] = {
-    init: function() {
-      this.appendValueInput('VALUE')
-          .setCheck('String')
-          .appendField('length of');
-      this.setOutput(true, 'Number');
-      this.setColour(160);
-      this.setTooltip('Returns number of letters in the provided text.');
-      this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
-    }
-  };*/
-  
   Blockly.Blocks['example_input_text'] = {
     init: function () {
       this.appendDummyInput()
@@ -60,7 +47,7 @@ $(document).ready(function () {
       this.appendValueInput("NAME")
           .setCheck(null)
           .appendField("Ask me a  question?")
-          .appendField(new Blockly.FieldDropdown([[" What is the date today?","Item 1"], ["What is the time now?","Item 2"], [" How are you?","Item 3"], [" What is JavaScript?","Item 4"], ["What is your name?","Item 5"], ["Ask me a question ","Item 6"]]), "dropdown_text");
+          .appendField(new Blockly.FieldDropdown([[" What is the date today?","9th August 2020"], ["What is the time now?","12:30 PM"], [" How are you?","Iam Fine. What about you?"], [" What is JavaScript?","JavaScript is a programmimng language."], ["What is your name?","My name is CuriousJr"], ["Ask me a question ","Yes, Iam asking"]]), "dropdown_text");
           this.setPreviousStatement(true, null);
           this.setColour(270);
        this.setTooltip("");
